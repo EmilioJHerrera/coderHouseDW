@@ -1,0 +1,30 @@
+@import "variablesAuxiliares";
+/*---------------------------reset de parametros de navegador-----------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*--------------------Cuerpos principales Main, header, body, footer-----------------------------*/
+
+
+main {
+	text-align: center;
+	background-color: $bg_grisOscuro;
+	font-family: 'Oxygen', sans-serif;
+}
+header {
+	text-align: center;
+	background-color: $bg_grisOscuro;
+	font-family: 'Oxygen', sans-serif;
+	display: inline;
+}
+body {
+	text-align: center;
+	background-color: $bg_grisOscuro;
+	font-family: 'Oxygen', sans-serif;
+}
+footer {
+	background-color: $bg_grisOscuro;
+}

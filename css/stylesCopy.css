@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*recuerda que las clases las apuntas con . y los ID con #*/
+/*ten en cuenta el color de base para el main y su cambio en el footer*/
+/*pagina sobria y minimalista. preguntar por modo oscuro*/
+/*diseño basado en KISS (keep it simple, stupid)
+/*las tranformaciones para realizar las tarjetas se obtienen de
+neumosphism.io*/
+main,
+header,
+body {
+    text-align: center;
+    /* background-color: #eaebec; */
+    background-color: #3d3d3d;
+    font-family: 'Oxygen', sans-serif
+        /*recuerda tener un respaldo en caso que la principal no se cargue: en este caso sans-serif es respaldo de oxigen!!!*/
+}
+
+header {
+    display: inline;
+}
+
+/* clases para boostrap propias*/
+.bg-grisOscuro {
+    background-color: #3d3d3d;
+    color: #eaebec;
+}
+
+
+
+
+
+nav {
+    margin-bottom: 5%;
+    /*separa la navBar de la imagen*/
+}
+
+nav ul li {
+    list-style: none;
+    /*elimina viñetas*/
+    display: inline;
+    /*muestra los elementos en horizontal*/
+}
+
+.row {
+    height: 4rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eaebec;
+    margin: 0 50px;
+    transition: all 0.8s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    color: red;
+}
+
+footer {
+    /* background:#DFE0E1 ; */
+    background-color: #3d3d3d;
+}
+
+#pagina_principal,
+.mision,
+.vision,
+#servicios,
+#formulario,
+#cambio_de_artefacto,
+#diagnostico,
+#prolongar,
+#termomagnetica,
+#tomacorrientes {
+    margin: 30px 5px;
+
+    border-radius: 50px;
+    background: #eaebec;
+    box-shadow: 5px 5px 15px #c7c8c9,
+        -5px -5px 15px #ffffff;
+
+    transition: all 0.8s;
+}
+
+/* #cambio_de_artefacto:hover,
+#diagnostico:hover,
+#prolongar:hover,
+#termomagnetica:hover,
+#tomacorrientes:hover {
+    transform: scale(1.1);
+} */
+
+.mision:hover {
+    transform: translateY(-5%);
+}
+
+.vision:hover {
+    transform: translateY(-5%);
+}
+
+.mision {
+    
+    /* float: right; */
+    /* height: 49%;
+    width: 49%;
+    margin: 0%; */
+
+    transition: all 0.8s;
+}
+
+.vision {
+    /* height: 49%;
+    width: 49%;
+    margin: 1%; */
+   
+    transition: all 0.8s;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h1,
+h3,
+h5 {
+    color: #eaebec;  
+}
+
+h5{
+    font-weight: bolder;
+}
+.textoClaro{
+    color: #eaebec;
+}
+
+.botones {
+    border-radius: 28px;
+    padding: 1% 1%;
+    margin: 1% 5%;
+    /* border: 2px solid #3d3d3d;
+    background-color: transparent;
+     */
+
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 4px 4px 8px #707070,
+        -4px -4px 8px #ffffff;
+
+    display: inline-block;
+}
+
+.botones a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #3d3d3d;
+}
+
+.botones:hover {
+    /* background-color: #3d3d3d; */
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 4px 4px 8px #707070,
+        inset -4px -4px 8px #ffffff;
+}
+
+.botones:hover a {
+    /* background-color: #3d3d3d;
+    color: #eaebec ; */
+}
+
+
+.iconoLogo {
+    width: 100px;
+    height: 100px;
+    /*margin: 0 auto;*/
+    display: inline-block;
+
+}
+
+h1 {
+    display: inline;
+}
+
+.bajaMargen {
+    margin-top: 2rem;
+}
+
+
+.flex1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 1rem;
+}
+
+.iconoLogo a {
+
+    display: inline;
+    text-decoration: none;
+    color: #eaebec;
+}
+
+.cardWidth {
+    width: 100px;
+    margin: 0 auto;
+
+}
+
+
+
+/*flexbox*/
+/* .contendor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+img {
+    width: 50%;
+}
+
+#diagnostico,
+#cambio_de_artefacto,
+#prolongar,
+#termomagnetica,
+#tomacorrientes {
+    height: 75vh;
+    width: 100vw;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+}
+
+.formRow input[type="text"],
+.formRow input[type="email"] {
+    width: 100%;
+}
+
+.formRow {
+    text-align: left;
+    padding: 2%;
+}
+
+.formRow button {
+    text-align: center;
+}
+
+.formRow input[type="text"]:invalid,
+.formRow input[type="email"]:invalid {
+    border: 2px solid red;
+}
+
+.formRow textarea {
+    resize: none;
+    min-height: 200px;
+    width: 100%;
+}
+
+.formRow {
+    width: 100%;
+    display: inline-block;
+}
+
+.pantallaCarrusel{
+    /* width: 90vw; */
+    /* height: 50vh; */
+
+}
+.maxPantalla {
+    height: 75vh;
+}
+
+.pantallaServicios{
+    height: 100vh;
+}
+.centrarMargen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*------------------------------------------------respaldo 24/03/2021---------------------------------------------------------------*/
+#tomacorrientes, #termomagnetica, #prolongar, #diagnostico, #cambio_de_artefacto, #formulario, #servicios, .vision, .mision, #pagina_principal {
+    margin: 30px 5px;
+    border-radius: 50px;
+    background: #eaebec;
+    box-shadow: 5px 5px 15px #c7c8c9, -5px -5px 15px #ffffff;
+  }
+  
+  /*---------------------------reset de parametros de navegador-----------------------------------*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*--------------------Cuerpos principales Main, header, body, footer-----------------------------*/
+  main {
+    text-align: center;
+    background-color: #3d3d3d;
+    font-family: "Oxygen", sans-serif;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #3d3d3d;
+    font-family: "Oxygen", sans-serif;
+    display: inline;
+  }
+  
+  body {
+    text-align: center;
+    background-color: #3d3d3d;
+    font-family: "Oxygen", sans-serif;
+  }
+  
+  footer {
+    background-color: #3d3d3d;
+  }
+  
+  #tomacorrientes, #termomagnetica, #prolongar, #diagnostico, #cambio_de_artefacto, #formulario, #servicios, .vision, .mision, #pagina_principal {
+    margin: 30px 5px;
+    border-radius: 50px;
+    background: #eaebec;
+    box-shadow: 5px 5px 15px #c7c8c9, -5px -5px 15px #ffffff;
+  }
+  
+  /*-----------------------------------------navBAr-----------------------------------------------*/
+  nav {
+    margin-bottom: 5%;
+  }
+  nav ul li {
+    list-style: none;
+    display: inline;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #eaebec;
+    margin: 0 50px;
+    transition: all 0.8s;
+  }
+  nav ul li:hover {
+    transform: scale(1.1);
+    color: red;
+  }
+  
+  #tomacorrientes, #termomagnetica, #prolongar, #diagnostico, #cambio_de_artefacto, #formulario, #servicios, .vision, .mision, #pagina_principal {
+    margin: 30px 5px;
+    border-radius: 50px;
+    background: #eaebec;
+    box-shadow: 5px 5px 15px #c7c8c9, -5px -5px 15px #ffffff;
+  }
+  
+  /*-------------------------------Secciones de las páginas---------------------------------------*/
+  #pagina_principal {
+    transition: all 0.8s;
+  }
+  
+  .mision {
+    transition: all 0.8s;
+  }
+  .mision:hover {
+    transform: translateY(-5%);
+  }
+  
+  .vision {
+    transition: all 0.8s;
+  }
+  .vision:hover {
+    transform: translateY(-5%);
+  }
+  
+  #servicios {
+    transition: all 0.8s;
+  }
+  
+  #formulario {
+    transition: all 0.8s;
+  }
+  
+  #cambio_de_artefacto {
+    transition: all 0.8s;
+    height: 75vh;
+    width: 100vw;
+  }
+  
+  #diagnostico {
+    transition: all 0.8s;
+    height: 75vh;
+    width: 100vw;
+  }
+  
+  #prolongar {
+    transition: all 0.8s;
+    height: 75vh;
+    width: 100vw;
+  }
+  
+  #termomagnetica {
+    transition: all 0.8s;
+    height: 75vh;
+    width: 100vw;
+  }
+  
+  #tomacorrientes {
+    transition: all 0.8s;
+    height: 75vh;
+    width: 100vw;
+  }
+  
+  /*---------------------------------------Formulario---------------------------------------------*/
+  .formRow {
+    text-align: left;
+    padding: 2%;
+    width: 100%;
+    display: inline-block;
+  }
+  .formRow input[type=text] {
+    width: 100%;
+  }
+  .formRow input[type=text]:invalid {
+    border: 2px solid red;
+  }
+  .formRow input[type=email] {
+    width: 100%;
+  }
+  .formRow input[type=email]:invalid {
+    border: 2px solid red;
+  }
+  .formRow button {
+    text-align: center;
+  }
+  .formRow textarea {
+    resize: none;
+    min-height: 200px;
+    width: 100%;
+  }
+  
+  #pagina_principal, .mision, .vision, #servicios, #formulario, #cambio_de_artefacto, #diagnostico, #prolongar, #termomagnetica, #tomacorrientes {
+    margin: 30px 5px;
+    border-radius: 50px;
+    background: #eaebec;
+    box-shadow: 5px 5px 15px #c7c8c9, -5px -5px 15px #ffffff;
+  }
+  
+  /*-------------------------------------Cosos varios---------------------------------------------*/
+  .bg-grisOscuro {
+    background-color: #3d3d3d;
+    color: #eaebec;
+  }
+  
+  .row {
+    height: 4rem;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    color: #eaebec;
+    display: inline;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    text-transform: uppercase;
+    color: #eaebec;
+  }
+  
+  h5 {
+    color: #eaebec;
+    font-weight: bolder;
+  }
+  
+  .textoClaro {
+    color: #eaebec;
+  }
+  
+  .botones {
+    border-radius: 28px;
+    padding: 1% 1%;
+    margin: 1% 5%;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 4px 4px 8px #707070, -4px -4px 8px #ffffff;
+    display: inline-block;
+  }
+  .botones a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #3d3d3d;
+  }
+  .botones:hover {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 4px 4px 8px #707070, inset -4px -4px 8px #ffffff;
+  }
+  
+  .iconoLogo {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+  }
+  .iconoLogo a {
+    display: inline;
+    text-decoration: none;
+    color: #eaebec;
+  }
+  
+  .bajaMargen {
+    margin-top: 2rem;
+  }
+  
+  .flex1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 1rem;
+  }
+  
+  .cardWidth {
+    width: 100px;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 50%;
+  }
+  
+  .maxPantalla {
+    height: 75vh;
+  }
+  
+  .pantallaServicios {
+    height: 100vh;
+  }
+  
+  .centrarMargen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*------------------------------------ULTIMAS ACTUALIZACIONES----------------------------------------*/
+  .carruselImg{
+    height: 90vh;
+    object-fit: cover;
+  }
+  
+  .textoGrande{
+    font-size: 3em;
+  }

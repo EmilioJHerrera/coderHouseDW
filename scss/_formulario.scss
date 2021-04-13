@@ -1,0 +1,29 @@
+
+/*---------------------------------------Formulario---------------------------------------------*/
+
+.formRow {
+	input[type="text"] {
+		width: 100%;
+		&:invalid {
+			border: 2px solid red;
+		}
+	}
+	input[type="email"] {
+		width: 100%;
+		&:invalid {
+			border: 2px solid red;
+		}
+	}
+	text-align: left;
+	padding: 2%;
+	width: 100%;
+	display: inline-block;
+	button {
+		text-align: center;
+	}
+	textarea {
+		resize: none;
+		min-height: 200px;
+		width: 100%;
+	}
+}

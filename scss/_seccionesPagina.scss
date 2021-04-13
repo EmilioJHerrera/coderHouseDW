@@ -1,0 +1,61 @@
+@import "variablesAuxiliares";
+/*-------------------------------Secciones de las páginas---------------------------------------*/
+
+#pagina_principal {
+	@extend %formatoCajita;
+	transition: all 0.8s;
+}
+.mision {
+	@extend %formatoCajita;
+	transition: all 0.8s;
+	
+	&:hover {
+		transform: translateY(-5%);
+	}
+}
+.vision {
+	@extend %formatoCajita;
+	transition: all 0.8s;
+	
+	&:hover {
+		transform: translateY(-5%);
+	}
+}
+#servicios {
+	@extend %formatoCajita;
+	transition: all 0.8s;
+}
+#formulario {
+	@extend %formatoCajita;
+	transition: all 0.8s;
+}
+#cambio_de_artefacto {
+	@extend %formatoCajita;
+	transition: all 0.8s;
+	height: 75vh;
+	width: 100vw;
+}
+#diagnostico {
+	@extend %formatoCajita;
+	transition: all 0.8s;
+	height: 75vh;
+	width: 100vw;
+}
+#prolongar {
+	@extend %formatoCajita;
+	transition: all 0.8s;
+	height: 75vh;
+	width: 100vw;
+}
+#termomagnetica {
+	@extend %formatoCajita;
+	transition: all 0.8s;
+	height: 75vh;
+	width: 100vw;
+}
+#tomacorrientes {
+	@extend %formatoCajita;
+	transition: all 0.8s;
+	height: 75vh;
+	width: 100vw;
+}

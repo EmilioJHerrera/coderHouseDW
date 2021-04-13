@@ -1,0 +1,24 @@
+<!--==============FAVICON==================--> (1)
+    <link rel="icon" 
+
+SE AGREGA ICONO PARA MOSTRAR EN CADA PESTAÑA
+
+<!--==============SEO==================-->
+    <meta name="description"                    (2) 
+    
+SE AGREGA DESCRIPCION DE LA PAGINA
+
+<meta name="keywords"                            (3) 
+
+SE AGREGAN LAS PALABRAS CLAVES PARA LA BUSQUEDA
+
+    <!--==============OPEN GRAPH==================-->
+    <meta property="og:type" content="website">                                                                 (4)
+    <meta property="og:title" content="Soluciones Innoven">                                                      (5)
+    <meta property="og:description" content="Servicios electromecánicos a nivel domiciliario e industrial">     (6)
+    <meta property="og:autor" content="EmilioH">                                                                (7)
+    <meta property="og:site_name" content="Soluciones Innoven">                                                 (8)
+    <meta property="og:url" content="www.solucionesInnoven.com.ar">                                             (9)
+    <meta property="og:image" content="imagenes/logo.png">                                                       (10)
+
+SE CONFIGURA PARTE DEL PROTOLOCO OPEN GRAPH CON LOS VALORES MOSTRADOS

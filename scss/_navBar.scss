@@ -1,0 +1,23 @@
+
+@import "variablesAuxiliares";
+
+/*-----------------------------------------navBAr-----------------------------------------------*/
+nav {
+	margin-bottom: 5%;
+	ul {
+		li {
+			list-style: none;
+			display: inline;
+			a {
+				text-decoration: none;
+				color: $txt_colorClaro;
+				margin: 0 50px;
+				transition: all 0.8s;
+			}
+			&:hover {
+				transform: scale(1.1);
+				color: red;
+			}
+		}
+	}
+}
