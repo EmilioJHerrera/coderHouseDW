@@ -34,6 +34,9 @@
     <meta property="og:site_name" content="Soluciones Innoven">
     <meta property="og:url" content="www.solucionesInnoven.com.ar">
     <meta property="og:image" content="imagenes/logo.png">
+    <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
 
     <!--==============CSS==================-->
     <link rel="stylesheet" href="css/styles.css" media="all">
@@ -43,35 +46,14 @@
 <body>
 
     <header>
-        <!--        
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col flex1">
-                    <figure class="iconoLogo">
-                        <a href="index.html"> <img src="imagenes/logo_BN.svg" alt="logo Soluciones Innoven"> </a>
-                    </figure>
 
-                    <h1>Soluciones innoven</h1>
-                </div>
-
-                <div class="col-6">
-                    <nav>
-                        <ul class="bajaMargen">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href=#mision_vision>Valores</a></li>
-                            <li><a href=#servicios> Servicios</a></li>
-                            <li><a href="html/contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div> -->
 
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-grisOscuro">
-            <div class="container-fluid ">
+            <div class="container ">
                 <a class="navbar-brand bajaMargen" href="index.html">
-                    <img src="imagenes/logo_BN.svg" alt="logo Soluciones Innoven"  class=" muestraLogo d-inline-block align-text-top">
+                    <img src="imagenes/logo_BN.svg" alt="logo Soluciones Innoven"
+                        class=" muestraLogo d-inline-block align-text-top">
                     <div class="marcaLogo">Soluciones Innoven</div>
                 </a>
 
@@ -115,15 +97,14 @@
             <div class="container">
 
                 <div class="row aling-items-center maxPantalla">
-                    <div class="col-md-6 col-sm-12 col-md-lg-6 h-100 centrarMargen">
+                    <div class="col-12 col-md-6 col-sm-12 col-md-lg-6 h-100 centrarMargen">
                         <article class="textoGrande">
                             <h1>Soluciones innovadoras, a los problemas de ahora</h1>
                         </article>
                     </div>
-                    <div class="col-md-6 col-sm-12 col-lg-6 h-100 centrarMargen imagenIntro">
+                    <div class="col-12 col-md-6 col-sm-12 col-lg-6 h-100 centrarMargen imagenIntro">
                         <figure>
                             <img src="imagenes/intro.jpg" alt="Imagen de manutención a tablero eléctrico">
-                            <!-- <img src="imagenes/portada.jpg" alt="Imagen copada o video llamativo"> -->
                         </figure>
                     </div>
 
@@ -148,40 +129,45 @@
         <!--=======SEGUNDA PARTE==============-->
         <section id="mision_vision" class="pantallaServicios">
 
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row bajaMargen">
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-12 col-md-6 col-sm-12">
                         <div class="mision">
 
                             <figure>
-                                <img src="imagenes/dianaSF.svg" class= "imagenValores" alt="Imagen asociada a Mision">
+                                <img src="imagenes/dianaSF.svg" class="imagenValores" alt="Imagen asociada a Mision">
                             </figure>
 
                             <h2>Misión</h2>
 
-                            <p>Ofrecer una amplia gama de servicios electromecánicos a nivel domiciliario e insdustrial,
+                            <p class="infoMision1">Ofrecer una amplia gama de servicios electromecánicos a nivel
+                                domiciliario e insdustrial,
                                 diseñando y enfocadondo soluciones a medida de las necesidades de cada cliente empleando
                                 profesionales con amplia experiencia y trayectoria.
                             </p>
-                            <p>
-                                Brindar soluciones no descuidando la satisfacción del cliente y brindar la mejor asesoría técnica.
+                            <p class="infoMision2">
+                                Brindar soluciones no descuidando la satisfacción del cliente y brindar la mejor
+                                asesoría técnica.
                             </p>
 
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class=" col-12 col-md-6 col-sm-12">
                         <div class="vision">
                             <figure>
-                                <img src="imagenes/ojoSF2.svg" class= "imagenValores" alt="Imagen asociada a Vision">
+                                <img src="imagenes/ojoSF2.svg" class="imagenValores" alt="Imagen asociada a Vision">
                             </figure>
 
                             <h2>Visión</h2>
 
-                            <p>Ofrecer la mejor experiencia en manutención de servicio, proporcionar al cliente proyectos de
-                                mejora contínua en nuestras soluciones o en puntos de mejora en otros servicios para establecer
+                            <p class="infoVision1">Ofrecer la mejor experiencia en manutención de servicio, proporcionar
+                                al cliente proyectos de
+                                mejora contínua en nuestras soluciones o en puntos de mejora en otros servicios para
+                                establecer
                                 un nuevo estandar entre calidad y servicio.
                             </p>
-                            <p>Ser reconocidos por nuestro compromiso y dedicación hacia los servicios brindado a nuestra clientela</p>
+                            <p class="infoVision2">Ser reconocidos por nuestro compromiso y dedicación hacia los
+                                servicios brindado a nuestra clientela</p>
                         </div>
                     </div>
 
@@ -196,78 +182,90 @@
 
         <!--=======TERCERA PARTE==============-->
         <section id="servicios" class="pantallaCarrusel">
+            <div class="container">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="html/prueba.html#cambio_de_artefacto"><img src="imagenes/foco2.jpg"
+                                    class="d-block w-100 carruselImg"
+                                    alt="Imagen: Cambio de artefacto de iluminacion"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cambio de artefacto de iluminacion</h5>
+                                <p>Incluye la mano de obra para la desinstalación e instalación del artefacto lumínico
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="html/prueba.html#diagnostico"><img src="imagenes/diagnostico.png"
+                                    class="d-block w-100 carruselImg"
+                                    alt="Imagen: Diagnostico del estado de la instalacion"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Diagnostico</h5>
+                                <p>Incluye la visita de un profesional para diagnosticar una reparación.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="html/prueba.html#prolongar"><img src="imagenes/prolongar tomacorrientes.jpg"
+                                    class="d-block w-100 carruselImg" alt="Imagen:Prolongar tomacorrientes"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Polongar tomacorrientes</h5>
+                                <p>Incluye la mano de obra para la realización del tendido eléctrico nuevo.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="html/prueba.html#termomagnetica"><img src="imagenes/termica.jpg"
+                                    class="d-block w-100 carruselImg" alt="Imagen: Instalación de termomagnéticas"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Instalación de llaves termomagnéticas</h5>
+                                <p>Incluye la mano de obra para la instalación de llaves termomagnéticas</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="html/prueba.html#tomacorrientes"><img src="imagenes/toma.png"
+                                    class="d-block w-100 carruselImg" alt="Imagen: Instalacion de tomacorrientes"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Instalación tomacorrientes</h5>
+                                <p>Incluye la mano de obra para la instalación de tomacorrientes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
 
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
+
+                <div class=row>
+                    <div class="col-12">
+                        <section class="botones">
+                            <a href="html/prueba.html"> Más Info</a>
+                        </section>
+                    </div>
+
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="html/prueba.html#cambio_de_artefacto"><img src="imagenes/foco2.jpg"
-                                class="d-block w-100 carruselImg" alt="Imagen: Cambio de artefacto de iluminacion"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Cambio de artefacto de iluminacion</h5>
-                            <p>Incluye la mano de obra para la desinstalación e instalación del artefacto lumínico</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="html/prueba.html#diagnostico"><img src="imagenes/diagnostico.png"
-                                class="d-block w-100 carruselImg"
-                                alt="Imagen: Diagnostico del estado de la instalacion"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Diagnostico</h5>
-                            <p>Incluye la visita de un profesional para diagnosticar una reparación.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="html/prueba.html#prolongar"><img src="imagenes/prolongar tomacorrientes.jpg"
-                                class="d-block w-100 carruselImg" alt="Imagen:Prolongar tomacorrientes"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Polongar tomacorrientes</h5>
-                            <p>Incluye la mano de obra para la realización del tendido eléctrico nuevo.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="html/prueba.html#termomagnetica"><img src="imagenes/termica.jpg"
-                                class="d-block w-100 carruselImg" alt="Imagen: Instalación de termomagnéticas"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Instalación de llaves termomagnéticas</h5>
-                            <p>Incluye la mano de obra para la instalación de llaves termomagnéticas</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="html/prueba.html#tomacorrientes"><img src="imagenes/toma.png"
-                                class="d-block w-100 carruselImg" alt="Imagen: Instalacion de tomacorrientes"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Instalación tomacorrientes</h5>
-                            <p>Incluye la mano de obra para la instalación de tomacorrientes.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+
+
             </div>
-
-
-
-
         </section>
 
 
@@ -275,7 +273,7 @@
 
     <footer>
 
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6 flex1">
                     <figure class="iconoLogo">
@@ -315,15 +313,19 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-<!-- 
+    <!-- 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
         integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
     </script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+    </script>
 
 
 

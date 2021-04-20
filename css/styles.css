@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /*--------------------Cuerpos principales Main, header, body, footer-----------------------------*/
@@ -149,20 +150,12 @@ nav ul li:hover {
   box-shadow: inset 1px 1px 2px #707070, inset -1px -1px 2px #ffffff; 
 } 
 
-/* .formRow input[type=text] {
-  width: 100%;
-  border-radius: 5px;
-  background: #e0e0e0;
-  box-shadow: inset 1px 1px 2px #707070, inset -1px -1px 2px #ffffff;
 
-} */
 
 .formRow input[type=text]:invalid {
   border: 2px solid red;
 }
-/* .formRow input[type=email] {
-  width: 100%;
-} */
+
 .formRow input[type=email]:invalid {
   border: 2px solid red;
 }
@@ -189,7 +182,7 @@ nav ul li:hover {
 .formRow textarea {
   resize: none;
   min-height: 200px;
-  /* width: 100%; */
+
 }
 
 #pagina_principal, .mision, .vision, #servicios, #formulario, #cambio_de_artefacto, #diagnostico, #prolongar, #termomagnetica, #tomacorrientes {
@@ -208,12 +201,6 @@ nav ul li:hover {
 .row {
   height: 4rem;
 }
-
-/* h1 {
-  text-transform: uppercase;
-  color: #eaebec;
-  display: inline;
-} */
 
 h2 {
   text-transform: uppercase;
@@ -292,7 +279,7 @@ img {
 }
 
 .pantallaServicios {
-  height: 100vh;
+   height: 100vh;
 }
 
 .centrarMargen {
@@ -322,10 +309,8 @@ img {
 
 .marcaLogo{
   display: inline;
-  /*font-weight: bold*/
   font-size: 28px;
   text-transform: uppercase;
-  /*letter-spacing: 0.5rem;*/
   padding-left: 1rem;
 }
 
@@ -349,10 +334,50 @@ img {
 
 /*------------------------------------Jugar con mediaQwery-------------------------------------------*/
 @media only screen and (max-width:576px){
-.imagenIntro, .bajaMargen, .info2{
+.marcaLogo{
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+.contendor{
+  overflow-x: hidden;
+}
+#formulario{
+  overflow-x: hidden;
+}
+
+  .imagenIntro, .info2, .infoMision2{
   display: none;
 }
+
+.mision, .vision{
+  height: 50vh;
 }
+
+.imagenValores{
+  height: 3vh;
+  width: 10%;
+}
+
+#servicios{
+  padding-top: 8%;
+  margin: 80px 5px;
+  border-radius: 0px;
+  /* background: #eaebec; */
+  background: #3d3d3d;
+  box-shadow: 0px 0px 0px #c7c8c9, -0px -0px 0px #ffffff;
+}
+
+.imagenTarea{
+  margin: 2rem 0;
+}
+
+
+
+}
+
+
+
 
 @media only screen and (max-width:992px){
 .info1{
